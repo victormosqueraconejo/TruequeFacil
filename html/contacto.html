@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Trueque Facil</a></h1>
+        <a href="#"><img class="menu" id="abrir" src="../icon/menu-icono.svg" alt="menu"></a>
+        <nav class="nav" id="nav">
+            <a href="#"><img id="cerrar" class="menu" src="../icon/menu-icono.svg" alt="menu"></a>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="Crearunacuenta.html">Registrarse</a></li>
+                <li class="buscar">
+                    <input class="input-buscar" type="text" placeholder="Que estas buscando?">
+                </li>
+                <li class="img-logo">
+                    <a href="#"><img src="../icon/carrito-icono.svg" alt="compras" width="80%"></a>
+                </li>
+                <li class="img-logo">
+                    <a href="notificaciones.html"><img src="../icon/mensage-icono.svg" alt="mensajes" width="80%"></a>
+                </li>
+                <li class="img-logo">
+                    <a href="perfil.html"><img src="../icon/cuenta-icono.svg" alt="cuenta" width="90%"></a>
+                </li>
+                <li class="opciones-menu-desplegable"><a href="#">Compras</a></li>
+                <li class="opciones-menu-desplegable"><a href="notificaciones.html">Notificaciones</a></li>
+                <li class="opciones-menu-desplegable"><a href="#">Ajustes</a></li>
+                <li class="opciones-menu-desplegable"><a href="actividades.html">Actividades</a></li>
+                <li class="opciones-menu-desplegable"><a href="perfil.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="container">
+            <article class="card">
+                <a href="../index.html">Inicio</a> / <a href="contacto.html">Contacto</a>
+
+                <section class="contact-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.743l2.447 2.447a.678.678 0 0 0 .744.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L7.123.511c-.423-.329-.974-.445-1.494-.315L2.488 1.885a1.745 1.745 0 0 1-.163-2.611l1.034-1.034c.74-.74 1.065-1.846.702-2.877a18.634 18.634 0 0 1 4.42-7.01 18.634 18.634 0 0 1 7.009-.703c1.03-.362 2.137-.037 2.877.703l1.794-2.306a1.745 1.745 0 0 1 .315-1.494l-.179-1.034c.645-.828 1.87-.905 2.611-.163l1.034 1.034c.74.74 1.065 1.846.702 2.877a18.634 18.634 0 0 1-4.42 7.01 18.634 18.634 0 0 1-7.009 4.42c-.362 1.03-.037 2.137.703 2.877l-1.794 2.306a1.745 1.745 0 0 1-1.494-.315l-2.19.547a.678.678 0 0 0-.743-.178l-2.447-2.447a.678.678 0 0 0-.178-.743l.547-2.19a1.745 1.745 0 0 1-.315-1.494L1.885.511z"/>
+                    </svg>
+                    <p class="text">Estamos disponibles 24/7, 7 dias a la semana.</p>
+                    <p class="text">Phone: +8801611112222</p>
+                </section>
+
+                <section class="contact-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill icon" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L6.761 8.83z"/>
+                    </svg>
+                    <p class="text">Te contactaremos dentro de 24 horas.</p>
+                    <p class="text">Emails: customer@exclusive.com</p>
+                    <p class="text">Emails: support@exclusive.com</p>
+                </section>
+            </article>
+
+            <article class="card">
+                <form class="form">
+                    <label for="name">Tu Nombre</label>
+                    <input type="text" id="name" placeholder="Tu Nombre" />
+
+                    <label for="email">Tu Correo Electronico</label>
+                    <input type="email" id="email" placeholder="Tu Correo Electronico" />
+
+                    <label for="phone">Tu Telefono</label>
+                    <input type="tel" id="phone" placeholder="Tu Telefono" />
+
+                    <label for="message">Tu Mensaje</label>
+                    <textarea id="message" placeholder="Tu Mensaje"></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+ 
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <a href="../index.html"><h4>Trueque Facil</h4></a>
+            <a href="Crearunacuenta.html"><p>Registrarse</p></a>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Soporte</h4>
+            <p>111 Bijoy saroni, Dhaka, EH 1515, Bangladesh</p>
+            <p>truequefacil@gmail.com</p>
+            <p>+88015-88888-9999</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Cuenta</h4>
+            <ul>
+                <li><a href="perfil.html">Mi Cuenta</a></li>
+                <li><a href="iniciarsesion.html">Iniciar Sesión / Registrarse</a></li>
+                <li><a href="#top">Publicaciones</a></li>
+                <li><a href="puntos">Puntos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>De Interés</h4>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="#">PQR</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Download App</h4>
+            <div class="app-download">
+                <img src="../img/qr-ejemplo.webp" alt="QR code">
+                <div>
+                    <a href="#"><img src="../img/google-play-descargar.png" alt="Google Play"></a>
+                    <div>
+                        <a href="#"><img src="../icon/facebook-logo.png" alt=""></a>
+                        <a href="#"><img src="../icon/instagram-logo.png" alt=""></a>
+                        <a href="#"><img src="../icon/linkedin-logo.png" alt=""></a>
+                        <a href="#"><img src="../icon/twitter-logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright Truque Facil 2023. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/menu.js"></script> <!--Para que el menu desplegable funcione. Solo en dispositivos moviles y tablets.-->
+</body>
+</html>

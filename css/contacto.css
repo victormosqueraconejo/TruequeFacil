@@ -1,0 +1,327 @@
+body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        li {
+            margin-left: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+            margin: 0 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            font-size: 24px;
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        button {
+            background-color: #dc3545;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /*Si es necesarion se puede cambiiar*/
+}
+
+:root {
+    --color-principal: #DB4444;
+    --color-secundario: #262727;
+    --color-terciario: #ececec;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: var(--color-principal);
+}
+
+
+
+/* Estilos header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--color-terciario);
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; 
+    gap: 2rem;  
+    place-items: center; 
+}
+.nav-list li a {
+    text-decoration:none;
+}
+.opciones-menu-desplegable {
+    display: none;
+}
+.buscar {
+    display: flex;
+}
+.buscar a{
+    background-color: var(--color-principal);
+}
+.input-buscar {
+    padding: 10px 50px 10px 35px;
+    background-image: url(../icon/buscar-icono.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right 10px center;
+}
+.menu {
+    display: none;
+}
+
+/*Estilos main*/
+
+
+
+
+
+
+
+
+
+/*Estilos footer*/
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+    
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+    
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+    
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    color: #ddd;
+}
+    
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+    
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+    
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+    
+.footer-section ul li a:hover {
+    color: var(--color-principal);
+}
+.app-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+    
+.app-download img {
+    width: 150px;
+}
+.app-download div div {
+    display: flex;
+    gap: 10px;
+}
+.app-download div div img{
+    width: 30px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+    
+.footer-bottom p {
+    font-size: 14px;
+    color: #888;
+}
+/* medias querys*/
+
+
+/*Menu desplegable dispositivos moviles y tablets*/
+@media screen and (max-width: 1024px) {
+    .menu {
+        display: block;
+        border: 1px solid var(--color-secundario);
+        border-radius: 5px;
+        width: 150%;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        gap: 1rem;
+        background-color: var(--color-principal);
+        padding-top: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        display: flex;
+    }
+    .nav-list li a {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .nav-list .img-logo {
+        display: none;
+    }
+    .opciones-menu-desplegable {
+        display: block;
+    }
+    .buscar:nth-child(5) {
+        order: -5; 
+        border: 1px solid black;
+    }
+}
+
+/* Pantalla pequena PQ menor de 767px*/
+@media screen  and (max-width: 767px) {
+}
+
+/* Pantalla mediana MD mayor a 768px y menor de 1024px*/
+@media screen and (min-width: 768px)and (max-width: 1024px) {
+
+}
+/* Pantalla grande GR mayor de 1025px*/
+@media screen and (min-width: 1025px) {
+
+}
+
+

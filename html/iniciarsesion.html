@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="../css/iniciarsesion.css">
+</head>
+<body>
+    <header>
+        <h1><a href="../index.html">Trueque Facil</a></h1>
+        <a href="#"><img class="menu" id="abrir" src="../icon/menu-icono.svg" alt="menu"></a>
+        <nav class="nav" id="nav">
+            <a href="#"><img id="cerrar" class="menu" src="../icon/menu-icono.svg" alt="menu"></a>
+            <ul class="nav-list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contactos</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="Crearunacuenta.html">Registrarse</a></li>
+                <li class="buscar">
+                    <input class="input-buscar" type="text" placeholder="Que estas buscando?">
+                </li>
+                <li class="img-logo">
+                    <a href="#"><img src="../icon/carrito-icono.svg" alt="compras" width="80%"></a>
+                </li>
+                <li class="img-logo">
+                    <a href="notificaciones.html"><img src="../icon/mensage-icono.svg" alt="mensajes" width="80%"></a>
+                </li>
+                <li class="img-logo">
+                    <a href="perfil.html"><img src="../icon/cuenta-icono.svg" alt="cuenta" width="90%"></a>
+                </li>
+                <li class="opciones-menu-desplegable"><a href="#">Compras</a></li>
+                <li class="opciones-menu-desplegable"><a href="notificaciones.html">Notificaciones</a></li>
+                <li class="opciones-menu-desplegable"><a href="#">Ajustes</a></li>
+                <li class="opciones-menu-desplegable"><a href="actividades.html">Actividades</a></li>
+                <li class="opciones-menu-desplegable"><a href="perfil.html">Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero">
+            <img src="https://media.istockphoto.com/photos/shopping-cart-with-mobile-phone-on-blue-background-3d-render-picture-id1299591311?b=1&k=20&m=1299591311&s=170667a&w=0&h=800" alt="Shopping cart with phone">
+            <div class="login-form">
+                <h2>Ingresar a Trueque Facil</h2>
+                <p>Ingresa los siguientes datos.</p>
+                <form action="#">
+                    <label for="email">Email or Phone Number</label>
+                    <input type="text" id="email" name="email" required>
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit">Ingresar</button>
+                    <a href="#" class="forgot-password">Contrasena Olvidada?</a>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <a href="../index.html"><h4>Trueque Facil</h4></a>
+            <a href="Crearunacuenta.html"><p>Registrarse</p></a>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Soporte</h4>
+            <p>111 Bijoy saroni, Dhaka, EH 1515, Bangladesh</p>
+            <p>truequefacil@gmail.com</p>
+            <p>+88015-88888-9999</p>
+        </div>
+
+        <div class="footer-section">
+            <h4>Cuenta</h4>
+            <ul>
+                <li><a href="perfil.html">Mi Cuenta</a></li>
+                <li><a href="iniciarsesion.html">Iniciar Sesión / Registrarse</a></li>
+                <li><a href="#top">Publicaciones</a></li>
+                <li><a href="puntos">Puntos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>De Interés</h4>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="#">PQR</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Download App</h4>
+            <div class="app-download">
+                <img src="../img/qr-ejemplo.webp" alt="QR code">
+                <div>
+                    <a href="#"><img src="../img/google-play-descargar.png" alt="Google Play"></a>
+                    <div>
+                        <a href="#"><img src="../icon/facebook-logo.png" alt=""></a>
+                        <a href="#"><img src="../icon/instagram-logo.png" alt=""></a>
+                        <a href="#"><img src="../icon/linkedin-logo.png" alt=""></a>
+                        <a href="#"><img src="../icon/twitter-logo.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© Copyright Truque Facil 2023. All rights reserved.</p>
+    </div>
+</footer>
+<script src="../js/menu.js"></script> <!--Para que el menu desplegable funcione. Solo en dispositivos moviles y tablets.-->
+</body>
+</html>

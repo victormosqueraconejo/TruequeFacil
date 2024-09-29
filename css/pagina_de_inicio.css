@@ -1,0 +1,463 @@
+/* estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --color-principal: #DB4444;
+    --color-secundario: #262727;
+    --color-terciario: #ececec;
+}
+.display-flex {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: var(--color-principal);
+}
+
+.alinear-centro {
+    text-align: center;
+}
+
+/* estilos header*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--color-terciario);
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; 
+    gap: 2rem;  
+    place-items: center; 
+}
+.nav-list li a {
+    text-decoration:none;
+}
+.opciones-menu-desplegable {
+    display: none;
+}
+.buscar {
+    display: flex;
+}
+.buscar a{
+    background-color: var(--color-principal);
+}
+.input-buscar {
+    padding: 10px 50px 10px 35px;
+    background-image: url(../icon/buscar-icono.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right 10px center;
+}
+.menu {
+    display: none;
+}
+
+/* estilos main*/
+
+.contenedor-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor-categorias {
+    display: grid;
+    text-align:justify ;
+    margin-left: 40px;
+}
+.contenedor-categorias li {
+    list-style: none;
+    margin: 10px;
+}
+.contenedor-destacado {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2%;
+    margin-left: 5%;
+    border: 1px solid black; 
+}
+.contenedor-oferta {
+    width: 70%;
+    text-align: center;
+    place-self: center;
+}
+.contenedor-imagen {
+    min-width: 30%;
+    height: auto;
+}
+
+
+.etiqueta {
+    margin: 3%;
+    display: flex;
+}
+.etiqueta-section {
+    background-color: var(--color-principal);
+    width: 2.5%;
+    border-radius: 7px;
+}
+
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filtro-rapido {
+    margin: 1%;
+}
+.contenedor-flechas {
+    margin-left: auto;
+}
+.etiqueta-categoria {
+    background-color: var(--color-principal);
+    margin: 6%;
+    width: 33%;
+    border-radius: 10px;
+}
+
+
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.vinetas {
+    background-color: var(--color-terciario);
+    border-radius: 7px;
+    margin: 1%;
+    width: 20%;
+    min-height: 350px;
+    display: grid;
+    text-align: center;
+}
+.vinetas img {
+    width: 90%;
+}
+.descripcion {
+    display: flex ;
+}
+.requisitos{
+    color: var(--color-principal);
+    margin-right: 20px;
+}
+.respuesta {
+    color: var(--color-secundario);
+}
+
+.ver-todo {
+    background-color: var(--color-principal);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.funciones-rapidas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.funcion-principal{
+    place-items: center;
+    text-align: center;
+    height: auto;
+    width: 15vh;
+    max-width: 25vh;
+    max-height: 15vh;
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    margin: 3%;
+}
+.funcion {
+    margin: 3%;
+    place-items: center;
+    text-align: center;
+    height: auto;
+    width: 15vh;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 25vh;
+    max-height: 15vh;
+}
+
+.geolocalizacion {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: auto;
+    margin: 5%;
+    background-image: url(../img/mapa.png);
+    display: grid;
+}
+.titulo {
+    color: white;
+    margin: 5%;
+}
+.ver {
+    background-color: green;
+    width: 150px;
+    min-width: 10px;
+    height: auto;
+    min-height: 20px;
+    margin: 5%;
+}
+
+.contenedor-mas {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+.actividades {
+    grid-row: 1 / span 2;
+    grid-column: 1;
+    margin: 5%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.beneficios {
+    grid-row: 1;
+    grid-column: 2;
+    margin: 5%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.privacidad {
+    grid-row: 2;
+    grid-column: 2;
+    margin: 5%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+/* estilos footer*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+    
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+    
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+    
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    color: #ddd;
+}
+    
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+    
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+    
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+    
+.footer-section ul li a:hover {
+    color: #fff;
+}
+.app-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+    
+.app-download img {
+    width: 100px;
+    height: auto;
+}
+.app-download div div {
+    display: flex;
+    gap: 10px;
+}
+.app-download div div img{
+    width: 30px;
+}
+
+    
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+    
+.footer-bottom p {
+    font-size: 14px;
+    color: #888;
+}
+    
+.social-links {
+    margin-top: 10px;
+}
+    
+.social-links a {
+    margin: 0 10px;
+    color: #888;
+    font-size: 18px;
+}
+    
+.social-links a:hover {
+    color: #fff;
+}
+/* medias querys*/
+
+/* Pantalla pequena PQ menor de 767px*/
+@media screen and (max-width: 767px) {
+    .menu {
+        display: block;
+        border: 1px solid var(--color-secundario);
+        border-radius: 5px;
+        width: 150%;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        gap: 1rem;
+        background-color: var(--color-principal);
+        padding-top: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        display: flex;
+    }
+    .nav-list li a {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .nav-list .img-logo {
+        display: none;
+    }
+    .opciones-menu-desplegable {
+        display: block;
+    }
+    .buscar:nth-child(5) {
+        order: -5;
+        border: 1px solid black;
+    }
+
+    .contenedor-categorias {
+        display: none;
+    }
+     
+    .contenedor-destacado {
+        place-content: center;
+    }
+    .filtro-rapido {
+        display:none
+    }
+    .seleccion {
+        display: block;
+    }
+    .ver-todo {
+        margin-bottom: 5%;
+    }
+    .funcion-principal {
+        margin: 3%;
+    }
+    .funcion {
+        margin: 3%;
+    }
+    .contenedor-mas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .actividades {
+        width: 50%;
+    }
+    .beneficios {
+        width: 50%;
+        
+    }
+    .beneficios img {
+        height: 25%;
+    }
+    .privacidad {
+        width: 50%;
+    }
+    .privacidad img {
+        height: 25%;
+    }
+    .vinetas {
+        width: 50%;
+    }
+}
+
+/* Pantalla mediana MD mayor a 768px y menor de 1024px*/
+@media screen and (min-width: 768px)and (max-width: 1024px) {
+    .contenedor-destacado {
+        place-content: center;
+    }
+    .contenedor-main {
+        flex-wrap: nowrap;
+    }
+    .ver-todo {
+        margin-bottom: 3%;
+    }
+}
+/* Pantalla grande GR mayor de 1025px*/
+@media screen and (min-width: 1025px) {
+    .contenedor-main {
+        display: flex;
+    }
+    .contenedor-destacado {
+        width: 70%;
+        place-content: center;
+    }
+}
+

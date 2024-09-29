@@ -1,0 +1,616 @@
+/*Estilos generales*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; /*Si es necesarion se puede cambiiar*/
+}
+
+:root {
+    --color-principal: #DB4444;
+    --color-secundario: #262727;
+    --color-terciario: #ececec;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+}
+
+
+a:hover {
+    color: var(--color-principal);
+}
+body{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+/* Estilos header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--color-terciario);
+    width: 100%;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; 
+    gap: 2rem;  
+    place-items: center; 
+    width: 100%;
+}
+.nav-list li a {
+    text-decoration:none;
+}
+.opciones-menu-desplegable {
+    display: none;
+}
+.buscar {
+    display: flex;
+}
+.buscar a{
+    background-color: var(--color-principal);
+}
+.input-buscar {
+    padding: 10px 50px 10px 35px;
+    background-image: url(../icon/buscar-icono.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: right 10px center;
+}
+.menu {
+    display: none;
+}
+
+/*Estilos main*/
+
+.main {
+    width: 80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.boton{
+    width: 30%;
+    height: auto;
+    background: #e91111;
+    margin-top: 2%;
+}
+
+.section1 {
+    margin-left: 2%;
+    display: flex;
+    height: 10vh;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.principal {
+    display: flex;
+ 
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+}
+
+.nav1 {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.div4 {
+    width: 70%;
+    height: 25%;
+  
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    margin-top: 4%;
+
+}
+
+.nav2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav3 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+}
+
+
+
+.a1 {
+    font-weight: bold;
+    color: #e91111;
+    font-size: 150%;
+}
+
+.contenedor-sections {
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.secundaria {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+    box-sizing: border-box;
+    margin-top: 5%;
+}
+
+.div5 {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boton2 {
+    width: 30%;
+    background: #e91111;
+    height: 70%;
+    border: none;
+    cursor: pointer;
+ 
+}
+
+.tamaño2 {
+    font-size: 150%;
+    color: #e91111;
+}
+
+.div6 {
+    height: 40%;
+    width: 100%;
+}
+
+.div7 {
+    margin-top: 5%;
+    height: 40%;
+}
+
+h3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+h4 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.boton3 {
+    display: block;
+    margin: auto;
+    background: #e91111;
+}
+.color-circle {
+    width: 25px;              /* Ancho del círculo */
+    height: 25px;             /* Altura del círculo */
+    border-radius: 50%;       /* Convierte el cuadrado en un círculo */
+    display: inline-block;     /* Hace que los círculos estén en línea */
+    margin: 10px;             /* Espacio entre los círculos */
+  }
+  
+  .red-circle {
+    background-color: red;     /* Color rojo */
+  }
+  
+  .black-circle {
+    background-color: rgb(0, 0, 0);    /* Color azul */
+  }
+
+
+
+
+
+
+
+/*Estilos footer*/
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+    
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    min-width: 200px;
+}
+    
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+    
+.footer-section p, .footer-section ul, .footer-section a {
+    font-size: 14px;
+    color: #ddd;
+}
+    
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+    
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+    
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+    
+.footer-section ul li a:hover {
+    color: var(--color-principal);
+}
+.app-download {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+    
+.app-download img {
+    width: 150px;
+}
+.app-download div div {
+    display: flex;
+    gap: 10px;
+}
+.app-download div div img{
+    width: 30px;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+    
+.footer-bottom p {
+    font-size: 14px;
+    color: #888;
+}
+/* medias querys*/
+
+
+
+
+/* Pantalla pequena PQ menor de 767px*/
+@media screen  and (min-width: 481px) and (max-width: 800px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .principal{
+        justify-content: center;
+        align-content: center;
+    }
+
+    .div1, .div2, .div3 {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .main {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .section1 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section2 {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Aquí hacemos que las imágenes ocupen el 100% del ancho */
+    .div4 {
+        width: 30%;
+        
+
+    }
+
+    img {
+        width: 100%; /* Ocupan el 100% del ancho */
+        height: auto; /* Ajustar la altura proporcionalmente */
+    }
+
+    /* Movemos nav3 debajo de las imágenes */
+    
+
+    .nav3 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        align-items: none;
+        text-align: none;
+        justify-content: none;
+    }
+    .nav1{
+        width:100%;
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 3%;
+    }
+   .nav2 {
+    width: 70%;
+    margin-left: 18%;
+   }
+   .nav3 {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-sections {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secundaria {
+        width: 100%;
+    }
+
+    .div5 {
+        display: flex;
+        align-items:flex-end;
+    }
+
+    .boton {
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .div6{
+        width: 40%;
+        max-height: 10%;
+        margin-left: 30%;
+    }
+    .div4{
+        width: 20%;
+    }
+    
+}
+
+@media screen and (min-width: 100px) and (max-width: 480px) {
+    header{
+        max-width: 100%;
+        height: auto;
+        justify-content: space-between;
+        align-items: center; 
+        display: flex;
+        flex-wrap: wrap;  
+    }
+    }
+    .menu {
+        display: block;
+        border: 1px solid var(--color-secundario);
+        border-radius: 5px;
+        width: auto;
+        height: auto;
+        
+    }
+    .main{
+        height: auto;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .nav1{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+
+    }
+    .section1{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .principal{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div4{
+        width: 20%;
+        height: auto;  
+        flex-wrap: wrap; 
+    }
+    .nav3{
+        width: 100%;
+        height: auto;
+    }
+
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .contenedor-sections{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     
+     
+    }
+    .secundaria{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 80%;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        gap: 1rem;
+        background-color: var(--color-principal);
+        padding-top: 0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5);
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+        display: flex;
+    }
+    .nav-list li a {
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    .nav-list .img-logo {
+        display: none;
+    }
+    .opciones-menu-desplegable {
+        display: block;
+    }
+    .buscar:nth-child(5) {
+        order: -5; 
+        border: 1px solid black;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1800px) {
+        .main {
+            width: 90%;
+            max-width: 750px;
+        }
+    
+        .section1 {
+            width: 100%;
+            display: flex;
+        }
+        .principal{
+            display: flex;
+            flex-direction: row;
+        }
+        .div4{
+            width: 80%;
+            height: auto;
+        }
+        .contenedor-sections{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .secundaria {
+            display: flex;
+            width: 20%;
+            height: auto;
+            box-sizing: border-box;
+            margin-top: 5%;
+        }
+        
+    
+        .nav1{
+            width: 20%;
+            height: auto;
+            margin-top: 3%;
+           
+        }
+        .nav2{
+            width: 40%;
+            max-width: 50%;
+            margin-left: 0%;
+            height: auto;
+    
+        }
+        .nav3{
+            width: 30%;
+            align-items: none;
+            align-content: space-around;
+            text-align: none;
+            height: auto;
+            
+        }
+
+    
+        .boton {
+            width: 40%;
+            height: 10%;
+        }
+        .div6{
+            width: 60%;
+          
+        }
+    }
+
+    
+

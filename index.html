@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Inicio</title>
+    <link rel="stylesheet" href="css/pagina_de_inicio.css">
+</head>
+<body>
+        <header>
+            <h1><a href="index.html">Trueque Facil</a></h1>
+            <a href="#"><img class="menu" id="abrir" src="icon/menu-icono.svg" alt="menu"></a>
+            <nav class="nav" id="nav">
+                <a href="#"><img id="cerrar" class="menu" src="icon/menu-icono.svg" alt="menu"></a>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/contacto.html">Contactos</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="html/Crearunacuenta.html">Registrarse</a></li>
+                    <li class="buscar">
+                        <input class="input-buscar" type="text" placeholder="Que estas buscando?">
+                    </li>
+                    <li class="img-logo">
+                        <a href="#"><img src="icon/carrito-icono.svg" alt="compras" width="80%"></a>
+                    </li>
+                    <li class="img-logo">
+                        <a href="html/notificaciones.html"><img src="icon/mensage-icono.svg" alt="mensajes" width="80%"></a>
+                    </li>
+                    <li class="img-logo">
+                        <a href="html/perfil.html"><img src="icon/cuenta-icono.svg" alt="cuenta" width="90%"></a>
+                    </li>
+                    <li class="opciones-menu-desplegable"><a href="#">Compras</a></li>
+                    <li class="opciones-menu-desplegable"><a href="html/notificaciones.html">Notificaciones</a></li>
+                    <li class="opciones-menu-desplegable"><a href="#">Ajustes</a></li>
+                    <li class="opciones-menu-desplegable"><a href="html/actividades.html">Actividades</a></li>
+                    <li class="opciones-menu-desplegable"><a href="html/perfil.html">Cuenta</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+    <main>
+        <div class="contenedor-main">
+            <section class="contenedor-categorias gr-3">
+                <ul>
+                    <li><a href="#">Alimentos</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Electrodomésticos</a></li>
+                    <li><a href="#">Juguetes</a></li>
+                    <li><a href="#">Herramientas</a></li>
+                    <li><a href="#">Hogar & Muebles</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Mascotas</a></li>
+                    <li><a href="#">Salud</a></li>
+                </ul>
+            </section>
+            
+            <section class="contenedor-destacado">
+                <div class="contenedor-oferta">
+                    <h3>Donacion Sofa Color Rojo</h3>
+                    <br>
+                    <p>Se dona este sofa debido a que no tengo espacio en mi hogar. 
+                        Para cualquier persona que lo desee. <sub>User1</sub></p>
+                        <br>
+                    <a href="html/detalle_prod_donacion.html">Ver Más</a>
+                </div>
+                <div class="contenedor-imagen">
+                    <img src="img/publicacion-destacada.jpeg" alt="destacado">
+                </div>
+            </section>
+        </div>
+    
+        <div class="etiqueta">
+            <section class="etiqueta-section"></section>
+            <h3 class="gr-11">Mas Reciente</h3>
+        </div>
+
+        <div class="filtros">
+            <h1 class="filtro-rapido seleccion">Todo</h2>
+            <h1 class="filtro-rapido">| Donacion</h1>
+            <h1 class="filtro-rapido">| Trueque</h1>
+            <h1 class="filtro-rapido">| Ventas</h1>    
+            <img class="contenedor-flechas" src="icon/fecla-izqueirda-icono.svg" alt="volver">
+            <img src="icon/fecla-derecha-icono.svg" alt="siguiente">
+        </div>
+
+        <!--Hasta aqui ya es responsive-->
+        <!--Vista de Articulos-->
+        <div class="articulos">
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Donacion</section>
+                    <a href="html/detalle_prod_donacion.html"><img src="img/control-articulo.png" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>HAVIT HV-G92 Gamepad</h4>
+                <div class="descripcion">
+                    <a href="html/detalle_prod_donacion.html"><p class="requisitos">Requisitos</p></a>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Venta</section>
+                    <a href="html/detalle_prod_venta.html"><img src="img/producto-televisor.png" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>HAVIT HV-G92 Gamepad</h4>
+                <div class="descripcion">
+                    <p class="requisitos">$190.000</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+                <a href="html/detalle_prod_venta.html"><img src="img/estrellas-calficacion.png" alt="califcacion" width="190px"></a>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section></section>
+                    <section class="etiqueta-categoria">Venta</section>
+                    <a href="html/detalle_prod_donacion.html"><img src="img/producto-teclado.png" alt="articulo1" width="190px" height="200px"></a>
+                </section>
+                <h4>HAVIT HV-G92 Gamepad</h4>
+                <div class="descripcion">
+                    <p class="requisitos">$ 430.000</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+                <img src="img/estrellas-calficacion.png" alt="califcacion" width="190px">
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Trueque</section>
+                    <a href="html/detalle_prod_trueque.html"><img src="img/producto-silla.png" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>HAVIT HV-G92 Gamepad</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+        </div>
+        <div class="alinear-centro gr-12"> 
+            <a href="html/verdetalle.html">
+                <button class="ver-todo">
+                    Ver Todo
+                </button>
+            </a>
+        </div>
+        
+        <div class="etiqueta gr-12">
+            <section class="etiqueta-section"></section>
+            <h3>Opciones</h3>
+            <img class="contenedor-flechas" src="icon/fecla-izqueirda-icono.svg" alt="volver">
+            <img src="icon/fecla-derecha-icono.svg" alt="siguiente">
+        </div>
+
+        <div class="funciones-rapidas">
+            <section class="funcion-principal">
+            <a href="html/crear_publicacion_truque.html">
+                <img src="icon/crear-icono.svg" alt="crear" width="50%">
+                <p>Crear Publicacion</p>
+            </a>
+            </section>
+            <section class="funcion">
+                <a href="html/crear_publicacion_venta.html">
+                <img src="icon/compra-icono.svg" alt="venta" width="50%">
+                <p>Ventas</p>
+            </a>
+            </section>
+            <section class="funcion">
+                <a href="html/crear_publicacion_donacion.html">
+                <img src="icon/donacion-icono.svg" alt="Donacion" width="50%">
+                <p>Donacion</p>
+            </a>
+            </section>
+            <section class="funcion">
+                <a href="html/actividades.html">
+                <img src="icon/trueque-icono.svg" alt="Trueque" width="50%">
+                <p>Actividades</p>
+            </a>
+            </section>
+            <section class="funcion">
+                <a href="html/perfil.html">
+                <img src="icon/cuenta-icono.svg" alt="Cuenta" width="50%">
+                <p>Cuenta</p>
+            </a>
+            </section>
+            <section class="funcion">
+                <a href="html/puntos.html">
+                <img src="icon/puntos-icono.svg" alt="Puntos" width="50%">
+                <p>Puntos</p>
+            </a>
+            </section>
+        </div>
+
+        <div class="etiqueta gr-12">
+            <section class="etiqueta-section"></section>
+            <h3 class="gr-10">Geolocalizacion</h3>
+        </div>
+
+        <div class="geolocalizacion">
+            <h1 class="titulo">Cerca de Ti</h1>
+            <button class="ver">
+                Ver
+            </button>
+        </div>
+
+        <h1>Explora las Publicaciones</h1>
+
+        <div class="etiqueta gr-12">
+            <section class="etiqueta-section"></section>
+            <h3 class="gr-10">Donaciones</h3>
+        </div>
+        
+        <div class="articulos">
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Donacion</section>
+                    <a href="html/detalle_prod_donacion.html"><img src="img/producto-alimento-perrro.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Comida para Perros</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Donacion</section>
+                    <a href="html/detalle_prod_donacion.html"><img src="img/producto-camara.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Vieja Camara SONY</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Donacion</section>
+                    <a href="html/detalle_prod_donacion.html"><img src="img/producto-portatil.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Portatil ASUS Danado</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Donacion</section>
+                    <a href="html/detalle_prod_donacion.html"><img src="img/producto-shampo.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Shampoo y Acondicionador Pantene</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+        </div>
+        <div class="alinear-centro gr-12"> 
+            <a href="html/verdetalle.html">
+                <button class="ver-todo">
+                    Ver Todo
+                </button>
+            </a>
+        </div>
+
+        <div class="etiqueta gr-12">
+            <section class="etiqueta-section"></section>
+            <h3 class="gr-10">Trueques</h3>
+        </div>
+
+        <div class="articulos">
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Trueque</section>
+                    <a href="html/detalle_prod_trueque.html"><img src="img/producto-telefono.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Telefono Samsung J7</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Trueque</section>
+                    <a href="html/detalle_prod_trueque.html"><img src="img/producto-libros.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Libros de Fisica</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Trueque</section>
+                    <a href="html/detalle_prod_trueque.html"><img src="img/producto-horno.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Horno de empotrar</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Trueque</section>
+                    <a href="html/detalle_prod_trueque.html"><img src="img/producto-ropa.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>conjunto Camisa y Zapatos</h4>
+                <div class="descripcion">
+                    <p class="requisitos">Requisitos</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+            </div>
+        </div>
+        <div class="alinear-centro gr-12"> 
+            <a href="html/verdetalle.html">
+                <button class="ver-todo">
+                    Ver Todo
+                </button>
+            </a>
+        </div>
+
+
+        <div class="etiqueta gr-12">
+            <section class="etiqueta-section"></section>
+            <h3 class="gr-10">Comprar</h3>
+        </div>
+
+        <div class="articulos">
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Venta</section>
+                    <a href="html/detalle_prod_venta.html"><img src="img/producto-teclado.png" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>HAVIT HV-G92 Gamepad</h4>
+                <div class="descripcion">
+                    <p class="requisitos">$190.000</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+                <img src="img/estrellas-calficacion.png" alt="califcacion" width="190px">
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Venta</section>
+                    <a href="html/detalle_prod_venta.html"><img src="img/producto-televisor.png" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>TV Samsung 55' pulgadas</h4>
+                <div class="descripcion">
+                    <p class="requisitos">$190.000</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+                <img src="img/estrellas-calficacion.png" alt="califcacion" width="190px">
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Venta</section>
+                    <a href="html/detalle_prod_venta.html"><img src="img/actividad-transporte.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Mountain Bike</h4>
+                <div class="descripcion">
+                    <p class="requisitos">$190.000</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+                <img src="img/estrellas-calficacion.png" alt="califcacion" width="190px">
+            </div>
+            <div class="vinetas gr-2">
+                <section class="alinear-centro">
+                    <section class="etiqueta-categoria"> Venta</section>
+                    <a href="html/detalle_prod_venta.html"><img src="img/producto-audifonos.jpg" alt="articulo1" width="190px"></a>
+                </section>
+                <h4>Audifonos SONY G34</h4>
+                <div class="descripcion">
+                    <p class="requisitos">$190.000</p>
+                    <p class="respuesta">Sigue disponible?</p>
+                </div>
+                <img src="img/estrellas-calficacion.png" alt="califcacion" width="190px">
+            </div>
+
+        </div>
+        <div class="alinear-centro gr-12"> 
+            <a href="html/verdetalle.html">
+                <button class="ver-todo">
+                    Ver Todo
+                </button>
+            </a>
+        </div> 
+
+
+        <div class="etiqueta gr-12">
+            <section class="etiqueta-section"></section>
+            <h3 class="gr-10">Mas</h3>
+        </div>
+
+        <div class="contenedor-mas">
+            <section class="actividades">                
+                <h4>Actividades</h4>  
+                <a href="html/actividades.html">
+                    <img src="img/actividades.webp" alt="actividades" width="95%">
+                </a>
+            </section>
+            <section class="beneficios">
+                <h4>Beneficios</h4>  
+                <a href="#">
+                    <img src="img/beneficios.png" alt="beneficios" height="90%"    >
+                </a>
+            </section>
+            <section class="privacidad"> 
+                <h4>Privacidad</h4>  
+                <a href="#">
+                    <img src="img/privacidad.png" alt="privacidad" height="90%">
+                </a>
+                
+            </section>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <a href="index.html"><h4>Trueque Facil</h4></a>
+                <a href="html/Crearunacuenta.html"><p>Registrarse</p></a>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Soporte</h4>
+                <p>111 Bijoy saroni, Dhaka, EH 1515, Bangladesh</p>
+                <p>truequefacil@gmail.com</p>
+                <p>+88015-88888-9999</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Cuenta</h4>
+                <ul>
+                    <li><a href="html/perfil.html">Mi Cuenta</a></li>
+                    <li><a href="html/iniciarsesion.html">Iniciar Sesión / Registrarse</a></li>
+                    <li><a href="#top">Publicaciones</a></li>
+                    <li><a href="html/puntos">Puntos</a></li>
+                    <li><a href="html/actividades.html">Actividades</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>De Interés</h4>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos de Uso</a></li>
+                    <li><a href="#">PQR</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Download App</h4>
+                <div class="app-download">
+                    <img src="img/qr-ejemplo.webp" alt="QR code">
+                    <div>
+                        <a href="#"><img src="img/google-play-descargar.png" alt="Google Play"></a>
+                        <div>
+                            <a href="#"><img src="icon/facebook-logo.png" alt=""></a>
+                            <a href="#"><img src="icon/instagram-logo.png" alt=""></a>
+                            <a href="#"><img src="icon/linkedin-logo.png" alt=""></a>
+                            <a href="#"><img src="icon/twitter-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© Copyright Truque Facil 2023. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script> <!--Para que el menu desplegable funcione. Solo en dispositivos moviles y tablets.-->
+</body>
+</html>
